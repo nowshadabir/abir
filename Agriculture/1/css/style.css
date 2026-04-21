@@ -1,0 +1,28 @@
+/* Basic Bootstrap Overrides */
+.carousel-item {
+    height: 50vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#introduction {
+    padding: 60px 0;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #dee2e6;
+}

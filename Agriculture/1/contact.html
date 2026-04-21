@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agriculture Information Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AgriHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="farming.html">Farming Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crop.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-md-7">
+                <div class="card p-4 shadow-sm">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <form class="needs-validation" novalidate id="contactForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile Number</label>
+                            <input type="tel" class="form-control" id="mobile" required>
+                            <div class="invalid-feedback">Please enter your mobile number.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fileUpload" class="form-label">Upload Image or Document</label>
+                            <input type="file" class="form-control" id="fileUpload">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message Box</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-5">
+                <div class="p-4 bg-light rounded shadow-sm">
+                    <h3>Contact Information</h3>
+                    <hr>
+                    <p><strong>Coordinator:</strong> Agri Coordinator</p>
+                    <p><strong>Address:</strong> 123 Agri Hub, Farm City</p>
+                    <p><strong>Phone:</strong> +1 234 567 890</p>
+                    <p><strong>Email:</strong> coordinator@agrihub.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p>&copy; 2026 Agriculture Information Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Information Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AgriHub Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="farming.html">Farming Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crop.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider Section -->
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop" class="d-block w-100" alt="Slider 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Agriculture Hub</h2>
+                    <p>Essential resources for the farming community.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?q=80&w=1200&auto=format&fit=crop" class="d-block w-100" alt="Slider 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Modern Farming</h2>
+                    <p>Innovative guides and data-driven insights.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="container mt-5 py-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>About the Agriculture Information Hub</h2>
+                <p class="lead text-muted">The Agriculture Information Hub is a digital platform designed to serve as a comprehensive resource for farmers. We aim to provide accessible guides, detailed crop information, and sustainable pest management strategies to improve agricultural outcomes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Section (3 cards) -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-success">Farming Guide</h4>
+                        <p class="card-text text-muted">Access professional guides on modern and traditional farming techniques and seasonal activities.</p>
+                        <a href="farming.html" class="btn btn-success mt-2">Open Guide</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-success">Crop Details</h4>
+                        <p class="card-text text-muted">Explore in-depth data on various crops, including fruits, vegetables, and commercial cash crops.</p>
+                        <a href="crop.html" class="btn btn-success mt-2">View Data</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="card-title text-success">Pest Control</h4>
+                        <p class="card-text text-muted">Learn about strategic pest management, biological control, and integrated prevention methods.</p>
+                        <a href="pest.html" class="btn btn-success mt-2">See Strategies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Agriculture Information Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

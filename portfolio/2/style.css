@@ -1,0 +1,98 @@
+/* Nature Theme - Variation 2 */
+:root {
+    --nature-green: #2d6a4f;
+    --leaf-green: #40916c;
+    --light-green: #d8f3dc;
+    --dark-green: #081c15;
+    --text-dark: #1b4332;
+    --accent-gold: #ffb703;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafff9;
+    color: var(--text-dark);
+}
+
+.navbar {
+    background-color: var(--nature-green) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(45, 106, 79, 0.7), rgba(45, 106, 79, 0.7)), url('assets/img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.section-title {
+    color: var(--nature-green);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-nature {
+    background-color: var(--nature-green);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+}
+
+.btn-nature:hover {
+    background-color: var(--leaf-green);
+    color: white;
+}
+
+.footer {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 30px 0;
+}
+
+#live-clock {
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: var(--nature-green);
+}
+
+.table-nature {
+    background-color: white;
+}
+
+.table-nature thead {
+    background-color: var(--nature-green);
+    color: white;
+}

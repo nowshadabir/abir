@@ -1,0 +1,42 @@
+/* Basic Style for /2 */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: #28a745 !important; /* Standard Green */
+}
+
+.hero-section {
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 30px 0;
+    border-top: 1px solid #dee2e6;
+}
