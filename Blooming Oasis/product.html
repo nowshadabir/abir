@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstera Deliciosa | Blooming Oasis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap for Framework requirement -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Blooming Oasis</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#" id="cart-icon" style="position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" style="position: absolute; top: -10px; right: -10px; background: var(--accent-color); color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; display: none;">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Product 1: Monstera -->
+        <div class="product-hero" style="margin-bottom: 8rem; border-bottom: 1px solid #eee; padding-bottom: 4rem;">
+            <div class="product-media">
+                <video class="product-video" controls poster="assets/monstera.png">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="margin-top: 1rem; font-style: italic; color: #666;">Watch: Monstera Growth Stages & Care Routine</p>
+            </div>
+            <div class="product-details">
+                <span style="color: var(--accent-color); font-weight: 600; text-transform: uppercase;">Featured Plant</span>
+                <h1>Monstera Deliciosa</h1>
+                <p style="font-size: 1.5rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1rem;">$45.00</p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3>Plant Specifications</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Size:</strong> Medium (12-18" tall)</li>
+                        <li><strong>Light:</strong> Bright Indirect</li>
+                        <li><strong>Watering:</strong> Every 1-2 weeks</li>
+                        <li><strong>Toxicity:</strong> Toxic to pets</li>
+                    </ul>
+                </div>
+
+                <div class="add-ons">
+                    <h3>Customize Your Plant</h3>
+                    <div class="add-on-item">
+                        <input type="checkbox" id="pot-monstera" name="addon-monstera" value="Ceramic Pot">
+                        <label for="pot-monstera">Designer Ceramic Pot (+$15.00)</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary add-to-cart-btn" data-product="Monstera Deliciosa" data-price="45" data-image="assets/monstera.png" data-addon-group="addon-monstera" style="width: 100%;">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2: Snake Plant -->
+        <div class="product-hero" style="margin-bottom: 8rem; border-bottom: 1px solid #eee; padding-bottom: 4rem;">
+            <div class="product-media">
+                <img src="assets/snakeplant.png" alt="Snake Plant" class="product-video" style="height: auto;">
+            </div>
+            <div class="product-details">
+                <span style="color: var(--accent-color); font-weight: 600; text-transform: uppercase;">Best for Beginners</span>
+                <h1>Snake Plant (Sansevieria)</h1>
+                <p style="font-size: 1.5rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1rem;">$35.00</p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3>Plant Specifications</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Size:</strong> Small-Medium (10-15" tall)</li>
+                        <li><strong>Light:</strong> Low to Bright</li>
+                        <li><strong>Watering:</strong> Every 2-3 weeks</li>
+                        <li><strong>Toxicity:</strong> Toxic to pets</li>
+                    </ul>
+                </div>
+
+                <div class="add-ons">
+                    <h3>Customize Your Plant</h3>
+                    <div class="add-on-item">
+                        <input type="checkbox" id="pot-snake" name="addon-snake" value="Concrete Pot">
+                        <label for="pot-snake">Minimalist Concrete Pot (+$12.00)</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary add-to-cart-btn" data-product="Snake Plant" data-price="35" data-image="assets/snakeplant.png" data-addon-group="addon-snake" style="width: 100%;">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3: Fiddle Leaf Fig -->
+        <div class="product-hero" style="margin-bottom: 5rem;">
+            <div class="product-media">
+                <img src="assets/fiddleleaf.png" alt="Fiddle Leaf Fig" class="product-video" style="height: auto;">
+            </div>
+            <div class="product-details">
+                <span style="color: var(--accent-color); font-weight: 600; text-transform: uppercase;">Designer Choice</span>
+                <h1>Fiddle Leaf Fig</h1>
+                <p style="font-size: 1.5rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1rem;">$85.00</p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3>Plant Specifications</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Size:</strong> Large (3-4 feet tall)</li>
+                        <li><strong>Light:</strong> Bright Indirect</li>
+                        <li><strong>Watering:</strong> Weekly</li>
+                        <li><strong>Toxicity:</strong> Toxic to pets</li>
+                    </ul>
+                </div>
+
+                <div class="add-ons">
+                    <h3>Customize Your Plant</h3>
+                    <div class="add-on-item">
+                        <input type="checkbox" id="stand-fiddle" name="addon-fiddle" value="Wood Stand">
+                        <label for="stand-fiddle">Premium Walnut Stand (+$30.00)</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary add-to-cart-btn" data-product="Fiddle Leaf Fig" data-price="85" data-image="assets/fiddleleaf.png" data-addon-group="addon-fiddle" style="width: 100%;">Add to Cart</button>
+            </div>
+        </div>
+
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Plant Parent Tips</h2>
+            <div class="grid-3">
+                <div class="card" style="padding: 1.5rem;">
+                    <p>"My Monstera loves the humidity in my bathroom! It's put out three new leaves this month."</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">- Sarah M.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem;">
+                    <p>"Tip: Clean the leaves with a damp cloth to help it breathe better. It makes a huge difference!"</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">- James L.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem;">
+                    <p>"Don't overwater! Wait until the top inch of soil is dry. Mine is thriving with this schedule."</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">- Elena R.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Blooming Oasis</h3>
+                <p>Your local plant experts.</p>
+            </div>
+            <div class="footer-bottom">
+                <p id="footer-date-time"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items will be injected by JS -->
+            <p style="text-align: center; color: #666; margin-top: 2rem;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Checkout Now</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

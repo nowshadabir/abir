@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Blooming Oasis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap for Framework requirement -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Blooming Oasis</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#" id="cart-icon" style="position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" style="position: absolute; top: -10px; right: -10px; background: var(--accent-color); color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; display: none;">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section style="text-align: center; margin-bottom: 5rem;">
+            <h1>Our Green Story</h1>
+            <p style="max-width: 800px; margin: 2rem auto; font-size: 1.2rem;">
+                Founded in 2020 by a group of plant enthusiasts, Blooming Oasis began in a small apartment overflowing with greenery. Our mission is to bring the calming presence of nature into every urban home, fostering a deeper connection between people and the environment.
+            </p>
+        </section>
+
+        <div class="grid-3">
+            <div class="card" style="padding: 2rem; text-align: center;">
+                <h3>Eco-Friendly Sourcing</h3>
+                <p>We partner with local nurseries that prioritize sustainable growing practices.</p>
+            </div>
+            <div class="card" style="padding: 2rem; text-align: center;">
+                <h3>Responsible Cultivation</h3>
+                <p>No harsh pesticides. Just organic care for healthy, resilient plants.</p>
+            </div>
+            <div class="card" style="padding: 2rem; text-align: center;">
+                <h3>Green Packaging</h3>
+                <p>Our packaging is 100% recyclable and biodegradable, minimizing our footprint.</p>
+            </div>
+        </div>
+
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">The Enthusiasts Behind the Oasis</h2>
+            <!-- Manual Styled List (as requested) -->
+            <ul class="team-list">
+                <li class="team-item">
+                    <img src="assets/team1.png" alt="Founder">
+                    <div>
+                        <h3>Lily Green</h3>
+                        <p>Founder & Head Cultivator. Lily has a PhD in Botany and a passion for rare tropicals.</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lead Designer">
+                    <div>
+                        <h3>Oliver Branch</h3>
+                        <p>Creative Director. Oliver ensures every plant looks like a work of art in your home.</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="Customer Success">
+                    <div>
+                        <h3>Rose Petal</h3>
+                        <p>Plant Care Specialist. Rose is here to answer every "Why is my leaf yellow?" question.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section style="margin-top: 5rem; text-align: center;">
+            <h2 class="section-title">Connect With Us</h2>
+            <div style="display: flex; justify-content: center; gap: 2rem;">
+                <a href="https://instagram.com/bloomingoasis" target="_blank" class="btn btn-primary">Instagram</a>
+                <a href="https://facebook.com/bloomingoasis" target="_blank" class="btn btn-primary">Facebook</a>
+                <a href="https://youtube.com/bloomingoasis" target="_blank" class="btn btn-primary">YouTube</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p id="footer-date-time"></p>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items will be injected by JS -->
+            <p style="text-align: center; color: #666; margin-top: 2rem;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Checkout Now</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

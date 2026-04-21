@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Oasis | Your Premium Plant Boutique</title>
+    <meta name="description"
+        content="Discover the perfect plants for your home. Use our Plant Matchmaker quiz and explore our curated collections.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap for Framework requirement -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Blooming Oasis</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#" id="cart-icon" style="position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count"
+                        style="position: absolute; top: -10px; right: -10px; background: var(--accent-color); color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; display: none;">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Bring Nature Indoors</h1>
+        <p>Expertly curated houseplants delivered to your doorstep. Transform your space into a lush sanctuary.</p>
+        <a href="#quiz" class="btn btn-primary">Find Your Plant Match</a>
+    </header>
+
+    <section id="quiz" class="quiz-container">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Plant Matchmaker</h2>
+            <div class="quiz-box">
+                <div class="quiz-step active" data-question="sunlight">
+                    <h3>How much sunlight does your space get?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="low">Low Light (North window, dim room)</div>
+                        <div class="quiz-option" data-value="medium">Medium Light (East/West window)</div>
+                        <div class="quiz-option" data-value="bright">Bright Indirect (South window, bright room)</div>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-question="care">
+                    <h3>What's your plant care experience?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="low">Beginner (I forget to water)</div>
+                        <div class="quiz-option" data-value="medium">Enthusiast (I water weekly)</div>
+                        <div class="quiz-option" data-value="high">Expert (I love a challenge)</div>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-question="pets">
+                    <h3>Do you have pets or small children?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="yes">Yes (Need non-toxic plants)</div>
+                        <div class="quiz-option" data-value="no">No (Open to all plants)</div>
+                    </div>
+                </div>
+
+                <div id="quiz-result" style="display: none; text-align: center;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Lush Varieties</h2>
+        <div class="collage-grid">
+            <div class="collage-item"><img src="assets/hero.png" alt="Lush Greenhouse"></div>
+            <div class="collage-item"><img src="assets/collage1.png" alt="Plant Detail"></div>
+            <div class="collage-item"><img src="assets/collage2.png" alt="Succulents"></div>
+            <div class="collage-item"><img src="assets/collage3.png" alt="Spider Plant"></div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Popular Houseplants</h2>
+        <div class="grid-3">
+            <div class="card">
+                <img src="assets/monstera.png" alt="Monstera Deliciosa">
+                <div class="card-content">
+                    <h3>Monstera Deliciosa</h3>
+                    <p>The iconic Swiss Cheese plant. Perfect for adding a tropical statement.</p>
+                    <a href="product.html" class="btn btn-primary" style="margin-top: 1rem;">View Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/collage2.png" alt="Snake Plant">
+                <div class="card-content">
+                    <h3>Snake Plant</h3>
+                    <p>Indestructible and air-purifying. Ideal for beginners and low light.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">View Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/collage3.png" alt="Fiddle Leaf Fig">
+                <div class="card-content">
+                    <h3>Fiddle Leaf Fig</h3>
+                    <p>The designer's favorite. Dramatic large leaves for bright spaces.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container"
+        style="background: var(--mint); padding: 4rem 2rem; border-radius: 20px; margin-bottom: 4rem;">
+        <h2 class="section-title">Curated Collections</h2>
+        <div class="grid-3">
+            <div class="card" style="padding: 1.5rem; text-align: center;">
+                <i class="fas fa-paw fa-3x" style="color: var(--accent-color); margin-bottom: 1rem;"></i>
+                <h3>Pet-Friendly Set</h3>
+                <p>Safe for your furry friends.</p>
+            </div>
+            <div class="card" style="padding: 1.5rem; text-align: center;">
+                <i class="fas fa-moon fa-3x" style="color: var(--accent-color); margin-bottom: 1rem;"></i>
+                <h3>Low Light Heroes</h3>
+                <p>Thrive in the shadows.</p>
+            </div>
+            <div class="card" style="padding: 1.5rem; text-align: center;">
+                <i class="fas fa-wind fa-3x" style="color: var(--accent-color); margin-bottom: 1rem;"></i>
+                <h3>Clean Air Bundle</h3>
+                <p>Naturally detoxify your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Plant Care Guides</h2>
+        <div class="grid-3">
+            <div class="card">
+                <div class="card-content">
+                    <h3><i class="fas fa-tint"></i> Watering 101</h3>
+                    <p>Learn the secrets to perfect hydration without drowning your plants.</p>
+                    <a href="#" class="btn" style="color: var(--accent-color); padding: 0; margin-top: 1rem;">Read Guide
+                        &rarr;</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3><i class="fas fa-sun"></i> Light Requirements</h3>
+                    <p>From low light to bright indirect—finding the right spot for every leaf.</p>
+                    <a href="#" class="btn" style="color: var(--accent-color); padding: 0; margin-top: 1rem;">Read Guide
+                        &rarr;</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3><i class="fas fa-seedling"></i> Repotting Tips</h3>
+                    <p>When and how to give your plants the space they need to grow.</p>
+                    <a href="#" class="btn" style="color: var(--accent-color); padding: 0; margin-top: 1rem;">Read Guide
+                        &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">About Blooming Oasis</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            We believe that every home deserves a touch of nature. Our mission is to provide high-quality, sustainably
+            sourced plants and the knowledge to help them thrive.
+        </p>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="about.html" class="btn btn-primary">Our Story</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Blooming Oasis</h3>
+                <p>Your local plant experts.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul style="list-style: none;">
+                    <li><a href="index.html" style="color: white;">Home</a></li>
+                    <li><a href="product.html" style="color: white;">Products</a></li>
+                    <li><a href="about.html" style="color: white;">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p><a href="https://instagram.com" target="_blank" style="color: white;">Instagram</a></p>
+                <p><a href="https://facebook.com" target="_blank" style="color: white;">Facebook</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Blooming Oasis. All rights reserved.</p>
+            <p id="footer-date-time"></p>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items will be injected by JS -->
+            <p style="text-align: center; color: #666; margin-top: 2rem;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Checkout Now</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
