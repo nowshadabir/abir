@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Contribute | Archive '71</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i data-lucide="library" style="width: 30px; height: 30px;"></i>
+                <h1 style="margin: 0; font-size: 1.5rem;">Archive '71</h1>
+            </div>
+            <nav id="main-nav">
+                <ul style="display: flex; list-style: none; gap: 25px; margin: 0; padding: 0;">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="documents.html" class="nav-link">Documents</a></li>
+                    <li><a href="interviews.html" class="nav-link">Interviews</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding: 80px 0;">
+        <div class="container contact-wrapper">
+            <div style="flex: 1;">
+                <h2 style="font-size: 3rem; margin-bottom: 25px;">Get in Touch</h2>
+                <p style="color: #666; font-size: 1.1rem; margin-bottom: 40px;">Have materials to contribute or questions about the archive? We'd love to hear from you.</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 30px;">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div style="background-color: #0067471a; padding: 15px; border-radius: 12px; color: #006747;">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0;">Email Us</h4>
+                            <p style="color: #666; margin: 5px 0 0;">info@archive71.bd</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div style="background-color: #DA291C1a; padding: 15px; border-radius: 12px; color: #DA291C;">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0;">Call Us</h4>
+                            <p style="color: #666; margin: 5px 0 0;">+880 2 1234567</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div style="background-color: #0067471a; padding: 15px; border-radius: 12px; color: #006747;">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0;">Visit Us</h4>
+                            <p style="color: #666; margin: 5px 0 0;">Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1.2; background-color: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                <form onsubmit="alert('Thank you! Your message has been sent.'); return false;" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name</label>
+                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; box-sizing: border-box;" required>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address</label>
+                        <input type="email" placeholder="email@example.com" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; box-sizing: border-box;" required>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Subject</label>
+                        <select style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; box-sizing: border-box;">
+                            <option>Inquiry</option>
+                            <option>Material Contribution</option>
+                            <option>Feedback</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Your Message</label>
+                        <textarea placeholder="Write your message here..." rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; box-sizing: border-box;" required></textarea>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Attachment (Optional)</label>
+                        <input type="file" style="width: 100%;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="padding: 15px; font-size: 1.1rem; cursor: pointer; border: none;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Liberation War Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

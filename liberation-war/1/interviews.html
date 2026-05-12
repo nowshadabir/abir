@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; flex-wrap: wrap;">
+            <h1>Archive '71</h1>
+            <button class="menu-btn" onclick="document.getElementById('nav-menu').classList.toggle('show')">
+                &#9776; Menu
+            </button>
+            <nav id="nav-menu">
+                <ul style="display: flex; list-style: none; gap: 20px;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="documents.html" style="color: white; text-decoration: none;">Documents</a></li>
+                    <li><a href="interviews.html" style="color: white; text-decoration: none;">Interviews</a></li>
+                    <li><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 50px 0;">
+        <div class="container">
+            <h2>Interviews Section</h2>
+            <p>Collection of recorded interviews with freedom fighters.</p>
+
+            <div style="margin-top: 30px;">
+                <div class="card">
+                    <h3>Interview with M. A. Rashid</h3>
+                    <p><strong>Biography:</strong> Rashid was a freedom fighter in Sector 2.</p>
+                    <p><strong>Summary:</strong> He talks about his experience during the night of March 25.</p>
+                    <audio controls style="margin-top: 10px;">
+                        <source src="#" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="card">
+                    <h3>Interview with Fatema Begum</h3>
+                    <p><strong>Biography:</strong> A war survivor from Khulna.</p>
+                    <p><strong>Summary:</strong> She shares how she survived in the village.</p>
+                    <audio controls style="margin-top: 10px;">
+                        <source src="#" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Liberation War Archive Project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Documents | Archive '71</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i data-lucide="library" style="width: 30px; height: 30px;"></i>
+                <h1 style="margin: 0; font-size: 1.5rem;">Archive '71</h1>
+            </div>
+            <nav id="main-nav">
+                <ul style="display: flex; list-style: none; gap: 25px; margin: 0; padding: 0;">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="documents.html" class="nav-link">Documents</a></li>
+                    <li><a href="interviews.html" class="nav-link">Interviews</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding: 80px 0;">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">Documents Catalog</h2>
+            <p style="color: #666; font-size: 1.2rem; margin-bottom: 50px;">A curated collection of official records from the 1971 Liberation War.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+                <div class="card">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="background-color: #0067471a; padding: 10px; border-radius: 10px;">
+                            <i data-lucide="file-text" style="color: #006747;"></i>
+                        </div>
+                        <h3 style="margin: 0;">Proclamation of Independence</h3>
+                    </div>
+                    <p style="color: #666; margin-bottom: 10px;"><strong>Date:</strong> April 10, 1971</p>
+                    <p style="color: #666; margin-bottom: 20px;">The formal proclamation of independence of Bangladesh, issued by the Constituent Assembly.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; pt: 15px;">
+                        <span style="font-size: 0.8rem; color: #999;">Source: National Archive</span>
+                        <a href="#" class="btn btn-primary" style="padding: 5px 15px; font-size: 0.9rem;">Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="background-color: #DA291C1a; padding: 10px; border-radius: 10px;">
+                            <i data-lucide="file-text" style="color: #DA291C;"></i>
+                        </div>
+                        <h3 style="margin: 0;">Indo-Soviet Treaty</h3>
+                    </div>
+                    <p style="color: #666; margin-bottom: 10px;"><strong>Date:</strong> August 9, 1971</p>
+                    <p style="color: #666; margin-bottom: 20px;">Treaty of Peace, Friendship and Cooperation signed between India and the Soviet Union.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; pt: 15px;">
+                        <span style="font-size: 0.8rem; color: #999;">Source: Foreign Ministry</span>
+                        <a href="#" class="btn btn-primary" style="padding: 5px 15px; font-size: 0.9rem;">Download PDF</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="background-color: #0067471a; padding: 10px; border-radius: 10px;">
+                            <i data-lucide="file-text" style="color: #006747;"></i>
+                        </div>
+                        <h3 style="margin: 0;">Instrument of Surrender</h3>
+                    </div>
+                    <p style="color: #666; margin-bottom: 10px;"><strong>Date:</strong> December 16, 1971</p>
+                    <p style="color: #666; margin-bottom: 20px;">The document signed by Pakistan's Gen Niazi at the end of the war.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; pt: 15px;">
+                        <span style="font-size: 0.8rem; color: #999;">Source: Victory Museum</span>
+                        <a href="#" class="btn btn-primary" style="padding: 5px 15px; font-size: 0.9rem;">Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Liberation War Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

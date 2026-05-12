@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberation War Archive | Bangladesh</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i data-lucide="library" style="width: 30px; height: 30px;"></i>
+                <h1 style="margin: 0; font-size: 1.5rem;">Archive '71</h1>
+            </div>
+            <nav id="main-nav">
+                <ul style="display: flex; list-style: none; gap: 25px; margin: 0; padding: 0;">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="documents.html" class="nav-link">Documents</a></li>
+                    <li><a href="interviews.html" class="nav-link">Interviews</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <section style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/home/kazinowshadabir/.gemini/antigravity/brain/a599819b-bdc5-47f4-b28e-061b623d9b0a/liberation_war_hero_1778589025459.png'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+            <div class="container">
+                <h2 style="font-size: 3rem; margin-bottom: 20px; color: white;">The Spirit of 1971</h2>
+                <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px;">Preserving the stories and sacrifices of the Bangladesh Liberation War for future generations.</p>
+                <a href="documents.html" class="btn btn-primary" style="background-color: #DA291C;">Explore the Archive</a>
+            </div>
+        </section>
+
+        <!-- Information Section -->
+        <section style="padding: 80px 0; background-color: white;">
+            <div class="container" style="display: flex; align-items: center; gap: 50px;">
+                <div style="flex: 1;">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 25px;">Why Preservation Matters</h3>
+                    <p style="color: #666; font-size: 1.1rem; margin-bottom: 20px;">The Liberation War of 1971 was a defining moment in our history. Every document, interview, and photograph is a piece of the puzzle that makes our national identity.</p>
+                    <p style="color: #666; font-size: 1.1rem;">Our mission is to collect and verify historical records to ensure that the truth of our struggle is never forgotten.</p>
+                </div>
+                <div style="flex: 1;">
+                    <img src="/home/kazinowshadabir/.gemini/antigravity/brain/a599819b-bdc5-47f4-b28e-061b623d9b0a/historical_document_parchment_1778589050523.png" alt="Document" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <h3 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">Explore Collections</h3>
+                <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                    <div class="card" style="flex: 1; min-width: 300px; text-align: center;">
+                        <i data-lucide="file-text" style="width: 50px; height: 50px; color: #006747; margin-bottom: 20px;"></i>
+                        <h4>Documents</h4>
+                        <p style="color: #666; margin-bottom: 20px;">Browse official treaties, letters, and declarations from the war era.</p>
+                        <a href="documents.html" class="btn btn-primary">View Documents</a>
+                    </div>
+                    <div class="card" style="flex: 1; min-width: 300px; text-align: center;">
+                        <i data-lucide="mic" style="width: 50px; height: 50px; color: #DA291C; margin-bottom: 20px;"></i>
+                        <h4>Interviews</h4>
+                        <p style="color: #666; margin-bottom: 20px;">Hear the firsthand accounts from those who fought for our freedom.</p>
+                        <a href="interviews.html" class="btn btn-primary">Listen Now</a>
+                    </div>
+                    <div class="card" style="flex: 1; min-width: 300px; text-align: center;">
+                        <i data-lucide="image" style="width: 50px; height: 50px; color: #006747; margin-bottom: 20px;"></i>
+                        <h4>Gallery</h4>
+                        <p style="color: #666; margin-bottom: 20px;">See the visual history of the struggle through rare photographs.</p>
+                        <a href="gallery.html" class="btn btn-primary">Open Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h2 style="color: white; margin-bottom: 10px;">Archive '71</h2>
+                <p>&copy; 2026 Liberation War Archive. All rights reserved.</p>
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: white;"><i data-lucide="facebook"></i></a>
+                <a href="#" style="color: white;"><i data-lucide="twitter"></i></a>
+                <a href="#" style="color: white;"><i data-lucide="instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

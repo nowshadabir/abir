@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; flex-wrap: wrap;">
+            <h1>Archive '71</h1>
+            <button class="menu-btn" onclick="document.getElementById('nav-menu').classList.toggle('show')">
+                &#9776; Menu
+            </button>
+            <nav id="nav-menu">
+                <ul style="display: flex; list-style: none; gap: 20px;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="documents.html" style="color: white; text-decoration: none;">Documents</a></li>
+                    <li><a href="interviews.html" style="color: white; text-decoration: none;">Interviews</a></li>
+                    <li><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 50px 0;">
+        <div class="container">
+            <h2>Contact & Contribution</h2>
+            <p>If you have any documents or photos, please fill out the form below.</p>
+
+            <div style="margin-top: 30px; width: 100%; max-width: 600px;">
+                <form onsubmit="alert('Thank you for your contribution!'); return false;">
+                    <div style="margin-bottom: 15px;">
+                        <label>Name:</label><br>
+                        <input type="text" style="width: 100%; padding: 10px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label>Email:</label><br>
+                        <input type="email" style="width: 100%; padding: 10px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label>Subject:</label><br>
+                        <input type="text" style="width: 100%; padding: 10px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label>Message:</label><br>
+                        <textarea style="width: 100%; padding: 10px;" rows="5"></textarea>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label>Upload File:</label><br>
+                        <input type="file">
+                    </div>
+                    <button type="submit" style="background-color: #006747; color: white; padding: 10px 20px; border: none; cursor: pointer;">Submit</button>
+                </form>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3>Contact Information</h3>
+                <p>Email: info@archive71.bd</p>
+                <p>Phone: +880 2 1234567</p>
+                <p>Address: Dhaka, Bangladesh</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Liberation War Archive Project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

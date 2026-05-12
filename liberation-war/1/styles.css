@@ -1,0 +1,67 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #006747;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Navigation */
+.menu-btn {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: row !important; /* Keep h1 and button side by side */
+        justify-content: space-between !important;
+    }
+    .menu-btn {
+        display: block;
+    }
+    nav {
+        display: none; /* Hidden by default on mobile */
+        width: 100%;
+        background-color: #006747;
+    }
+    nav.show {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px !important;
+        padding: 20px 0;
+    }
+}
+
+/* Simple Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Basic Card Style */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}

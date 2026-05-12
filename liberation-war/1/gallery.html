@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; flex-wrap: wrap;">
+            <h1>Archive '71</h1>
+            <button class="menu-btn" onclick="document.getElementById('nav-menu').classList.toggle('show')">
+                &#9776; Menu
+            </button>
+            <nav id="nav-menu">
+                <ul style="display: flex; list-style: none; gap: 20px;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="documents.html" style="color: white; text-decoration: none;">Documents</a></li>
+                    <li><a href="interviews.html" style="color: white; text-decoration: none;">Interviews</a></li>
+                    <li><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 50px 0;">
+        <div class="container">
+            <h2>Photographs Gallery</h2>
+            <p>A collection of photographs from the Liberation War.</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+                <div class="card" style="width: 300px;">
+                    <img src="/home/kazinowshadabir/.gemini/antigravity/brain/a599819b-bdc5-47f4-b28e-061b623d9b0a/liberation_war_hero_1778589025459.png" alt="Photo" style="width: 100%; height: 200px; object-fit: cover;">
+                    <p>The Spirit of Freedom</p>
+                    <a href="/home/kazinowshadabir/.gemini/antigravity/brain/a599819b-bdc5-47f4-b28e-061b623d9b0a/liberation_war_hero_1778589025459.png" target="_blank">View Large</a>
+                </div>
+                
+                <div class="card" style="width: 300px;">
+                    <div style="width: 100%; height: 200px; background-color: #ccc; display: flex; align-items: center; justify-content: center;">Photo Placeholder</div>
+                    <p>Victory Celebration</p>
+                    <p>Rare photo from Dec 1971.</p>
+                </div>
+
+                <div class="card" style="width: 300px;">
+                    <div style="width: 100%; height: 200px; background-color: #ccc; display: flex; align-items: center; justify-content: center;">Photo Placeholder</div>
+                    <p>Village Resistance</p>
+                    <p>People fighting for their home.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Liberation War Archive Project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
