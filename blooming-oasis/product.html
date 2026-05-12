@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstera Deliciosa | Blooming Oasis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-top: 80px;">
+    <nav>
+        <div class="logo">BLOOMING OASIS</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Monstera</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+                <!-- Product Media -->
+                <div>
+                    <img src="assets/images/monstera_detail.png" alt="Monstera Deliciosa" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow); margin-bottom: 30px;">
+                    <div style="background: #000; border-radius: 20px; overflow: hidden; height: 300px; display: flex; align-items: center; justify-content: center; position: relative;">
+                        <video controls style="width: 100%; height: 100%; object-fit: cover;" poster="assets/images/monstera_detail.png">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div style="position: absolute; top: 20px; left: 20px; background: rgba(0,0,0,0.6); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Monstera Growth Stages</div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div>
+                    <h1 style="font-size: 3.5rem; color: var(--primary); margin-bottom: 10px;">Monstera Deliciosa</h1>
+                    <p style="font-size: 1.5rem; color: var(--accent); font-weight: 700; margin-bottom: 20px;">$45.00</p>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 10px;">Plant Size</h4>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn" style="background: var(--white); color: var(--primary); border: 1px solid var(--primary);">Small</button>
+                            <button class="btn">Medium</button>
+                            <button class="btn" style="background: var(--white); color: var(--primary); border: 1px solid var(--primary);">Large</button>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--white); padding: 25px; border-radius: 15px; margin-bottom: 30px; box-shadow: var(--shadow);">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div>
+                                <p><strong>Light:</strong> Bright, Indirect</p>
+                                <p><strong>Watering:</strong> Every 1-2 weeks</p>
+                            </div>
+                            <div>
+                                <p><strong>Toxicity:</strong> Toxic to Pets ⚠️</p>
+                                <p><strong>Repotting:</strong> Every 2 years</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 10px;">Customize Your Oasis</h4>
+                        <label style="display: block; margin-bottom: 10px;">
+                            <input type="checkbox"> Add Terracotta Pot (+$15.00)
+                        </label>
+                        <label style="display: block; margin-bottom: 10px;">
+                            <input type="checkbox"> Add Modern Wood Stand (+$25.00)
+                        </label>
+                    </div>
+
+                    <button class="btn" style="width: 100%; font-size: 1.2rem; padding: 20px;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--primary-light); color: var(--white);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Plant Parent Tips</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                    <p style="font-style: italic; margin-bottom: 15px;">"My Monstera loves a moss pole! It started growing huge leaves once it had something to climb."</p>
+                    <p><strong>- Sarah J.</strong></p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                    <p style="font-style: italic; margin-bottom: 15px;">"Don't overwater! I wait until the top 2 inches of soil are dry."</p>
+                    <p><strong>- Mike T.</strong></p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                    <p style="font-style: italic; margin-bottom: 15px;">"Mist the leaves occasionally to increase humidity, it makes them so shiny!"</p>
+                    <p><strong>- Elena R.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 20px;">BLOOMING OASIS</div>
+            <div class="footer-bottom">
+                <p id="current-time"></p>
+                <p>&copy; 2026 Blooming Oasis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

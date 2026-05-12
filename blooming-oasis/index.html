@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Oasis | Your Premium Plant Sanctuary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">BLOOMING OASIS</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Monstera</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Bring Nature Indoors</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 30px; color: white;">Discover the perfect greenery for your lifestyle.</p>
+        <a href="#matchmaker" class="btn">Find Your Match</a>
+    </header>
+
+    <section id="matchmaker">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-size: 2.5rem; color: var(--primary);">Plant Matchmaker</h2>
+                <p>Answer 3 quick questions to find your soul-plant.</p>
+            </div>
+            <div id="quiz-container" class="quiz-container">
+                <!-- Quiz will be injected here by main.js -->
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--white);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary);">Lush Varieties</h2>
+            <div class="collage-grid">
+                <div class="collage-item" style="grid-column: span 2; grid-row: span 2;">
+                    <img src="assets/images/plant_collage_1.png" alt="Plant Collage">
+                </div>
+                <div class="collage-item">
+                    <img src="assets/images/monstera_detail.png" alt="Monstera Detail">
+                </div>
+                <div class="collage-item">
+                    <img src="assets/images/hero_plants.png" alt="Living Room Plants">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Popular Houseplants</h3>
+                    <ul style="line-height: 2;">
+                        <li>• Monstera Deliciosa</li>
+                        <li>• Snake Plant</li>
+                        <li>• Fiddle Leaf Fig</li>
+                        <li>• Pothos Gold</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Curated Collections</h3>
+                    <ul style="line-height: 2;">
+                        <li>• The Low-Light Set</li>
+                        <li>• Pet-Friendly Oasis</li>
+                        <li>• Desktop Greenery</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Plant Care Guides</h3>
+                    <a href="#" style="display: block; margin-bottom: 10px; color: var(--primary-light);">Watering 101 →</a>
+                    <a href="#" style="display: block; margin-bottom: 10px; color: var(--primary-light);">Sunlight Secrets →</a>
+                    <a href="#" style="display: block; color: var(--primary-light);">Soil & Fertilizer →</a>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">About Blooming Oasis</h3>
+                    <p>We are a boutique nursery dedicated to bringing the serene beauty of the rainforest into modern homes since 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 20px;">BLOOMING OASIS</div>
+            <p>Nurturing your urban jungle with love and expertise.</p>
+            <div class="footer-bottom">
+                <p id="current-time"></p>
+                <p>&copy; 2026 Blooming Oasis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
